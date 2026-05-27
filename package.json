@@ -1,0 +1,69 @@
+{
+  "name": "aegis-guard",
+  "version": "0.1.0",
+  "description": "Dynamic, database driven RBAC/ABAC for Next.js App Router. Shield your Server Components at runtime.",
+  "author": "Austin Choi <austinch20@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/choice404/next-aegis"
+  },
+  "homepage": "https://github.com/choice404/next-aegis#readme",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "tsc",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "keywords": [
+    "next.js",
+    "rbac",
+    "abac",
+    "access-control",
+    "permissions",
+    "server-components",
+    "react",
+    "authorization"
+  ],
+  "packageManager": "pnpm@10.28.2",
+  "peerDependencies": {
+    "next": ">=16.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "exports": {
+    "./core": {
+      "types": "./dist/core.d.ts",
+      "import": "./dist/core.mjs",
+      "require": "./dist/core.js"
+    },
+    "./server": {
+      "types": "./dist/server.d.ts",
+      "import": "./dist/server.mjs",
+      "require": "./dist/server.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "import": "./dist/client.mjs",
+      "require": "./dist/client.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^25.2.3",
+    "@types/react": "^19.2.14",
+    "jsdom": "^29.1.1",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.7"
+  }
+}
+
