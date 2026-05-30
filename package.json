@@ -1,14 +1,14 @@
 {
   "name": "aegis-guard",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Dynamic, database driven RBAC/ABAC for Next.js App Router. Shield your Server Components at runtime.",
   "author": "Austin Choi <austinch20@protonmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/choice404/next-aegis"
+    "url": "https://github.com/choice404/aegis-guard"
   },
-  "homepage": "https://github.com/choice404/next-aegis#readme",
+  "homepage": "https://github.com/choice404/aegis-guard#readme",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -66,4 +66,3 @@
     "vitest": "^4.1.7"
   }
 }
-
